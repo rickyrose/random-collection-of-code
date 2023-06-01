@@ -75,7 +75,7 @@ const JSBridge: JSBridgeInterface & { callNative: (message: any) => void } = {
       if (
         JSBridge.validateSchema(messageObj.data, Schemas.newGameEventSchema)
       ) {
-        // Call a function to handle new game payload @anhkhoacsagio need to add import for starting a new game
+        // Call a function to handle new game payload need to add import for starting a new game
         handleNewGamePayload(messageObj.data);
       }
     } else if (messageObj && messageObj.callbackId) {
@@ -130,7 +130,7 @@ function requestNextGame() {
 }
 
 function handleNewGamePayload(data: NewGameEventSchema) {
-  // Placeholder: Replace this with the actual function or module that starts a new game. @anhkhoa738
+  // Placeholder: Replace this with the actual function or module that starts a new game.
   const startNewGame = (gameData: NewGameEventSchema) => {
     console.log(
       'Starting a new game with the following parameters: ',
