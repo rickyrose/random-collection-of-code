@@ -1,3 +1,5 @@
+//code to send events and recieve events from/to a game to/from a native app (this implementation is for Android
+
 import Ajv from 'ajv';
 import {
   NewGameEventSchema,
